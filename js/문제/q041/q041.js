@@ -28,14 +28,13 @@ for(let i=0; i<com.length; i++){
     }
 }
 
-// 컴퓨터와 내 숫자가 5개가 일치하면 보너스 번호랑 컴퓨터 랜덤숫자랑 일치하는지 확인하기
-if(count == 5) {
-    for(let i=0; i<com.length; i++){
-        if(com[i] == bonus){
-            second = -1;
-        }
+// 보너스 번호랑 컴퓨터 랜덤숫자랑 일치하는지 확인하기
+for(let i=0; i<com.length; i++){
+    if(com[i] == bonus){
+        second = -1;
     }
 }
+
 
 // 컴퓨터 랜덤숫자 6개 출력
 dw("컴퓨터: ");
