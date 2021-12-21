@@ -63,7 +63,7 @@ if(count == 3){
     dw("5등입니다");
 } else if(count == 4) {
     dw("4등입니다.");
-} else if(count == 5) {
+} else if(count == 5 && second != -1) {
     dw("3등입니다.");
 } else if(count == 5 && second == -1) {
     dw("2등입니다.");
