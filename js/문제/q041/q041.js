@@ -121,8 +121,12 @@ resultString += "\n";
 
 // 일치하는 숫자 출력
 resultString += "일치하는 숫자 : ";
-for(let i=0; i<count; i++){
-    resultString += ol[i] + " ";
+if(idx == 0) {
+    resultString += "없음";
+} else {
+    for(let i=0; i<count; i++){
+        resultString += ol[i] + " ";
+    }
 }
 resultString += "\n";
 
