@@ -19,8 +19,6 @@ for(let i=0; i<com.length; i++) {
 let loop = 1;
 while(loop) {
 
-    loop = 1;
-
     bonus = Math.floor(Math.random() * 45) + 1;
 
     for(let i=0; i<me.length; i++) {
@@ -29,8 +27,13 @@ while(loop) {
         }
     }
 
-    if(loop == 1){
-        loop = 0;
+    switch(loop) {
+        case 1:
+            loop = 0;
+        break;
+        case 2:
+            loop = 1;
+        break;
     }
 }
 
