@@ -15,8 +15,24 @@ for(let i=0; i<com.length; i++) {
     }
 }
 
-// 보너스 번호에 랜덤숫자(1~45) 넣기
-bonus = Math.floor(Math.random() * 45) + 1;
+// 보너스 번호에 랜덤숫자(1~45) 넣기 (내가 입력한 숫자와 중복되지 않게 구현)
+let loop = 1;
+while(loop) {
+
+    loop = 1;
+
+    bonus = Math.floor(Math.random() * 45) + 1;
+
+    for(let i=0; i<me.length; i++) {
+        if(me[i] == bonus) {
+            loop++;
+        }
+    }
+
+    if(loop == 1){
+        loop = 0;
+    }
+}
 
 // 컴퓨터의 6개의 숫자와 내 숫자를 비교 후 일치한 만큼 변수(count)에 누적시키기
 let count = 0;
@@ -64,7 +80,7 @@ if(count == 3){
 } else if(count == 4) {
     dw("4등입니다.");
 } else if(count == 5 && second != -1) {
-    dw("3등입니다.");
+    dw("3등입니다.")
 } else if(count == 5 && second == -1) {
     dw("2등입니다.");
 } else if(count == 6){
