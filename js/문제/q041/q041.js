@@ -122,16 +122,16 @@ resultString += "\n";
 // 일치하는 숫자 출력
 resultString += "일치하는 숫자 : ";
 if(idx == 0) {
-    resultString += "없음";
+    resultString += "없음 ";
 } else {
     for(let i=0; i<count; i++){
         resultString += ol[i] + " ";
     }
 }
-resultString += "\n";
+resultString += "(";
 
 // 몇개가 일치하는지 출력
-resultString += count + "개 일치";
+resultString += count + "개 일치)";
 resultString += "\n";
 
 // 보너스 번호 출력
